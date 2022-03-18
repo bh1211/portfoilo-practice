@@ -1,0 +1,64 @@
+#background{
+    width: 1500px;
+    height: 2000px;
+    background-color: black;
+    border-radius: 20px;
+    margin-left: 10%;
+    margin-top: 70%;
+    animation-name: upbackground;
+    animation-duration: 2s;
+    animation-delay: .6s;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+}
+#name{
+    font-size: 60px;
+    text-align: center;
+    padding: 0 10px;
+    animation-name: upname;
+    animation-duration: 3s;
+    animation-delay: .6s;
+    animation-fill-mode: forwards;
+
+}
+#name > p:hover{
+    transform: scale(1.5);
+    transition: .5s;
+}
+#name > p {
+    display: inline-block;
+    padding: 10px;
+    color: white;
+}
+#minititle{
+    font-size: 20px;
+    color: white;
+    animation-name: miniup;
+    animation-duration: 3s;
+    animation-delay: .6s;
+    animation-fill-mode: forwards;
+}
+@keyframes upbackground {
+    from{
+            
+    }
+    to{
+        margin-top: 0px;
+    }
+}
+@keyframes upname {
+    from{
+        margin-top: 2000px;
+    }
+    to{
+        margin-top: 30px
+    }
+}
+@keyframes miniup{
+    from{
+        margin-top: 2000px;
+    }
+    to{
+        margin-top: -40px;
+    }
+}
